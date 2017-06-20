@@ -6,6 +6,10 @@ import (
 )
 
   // gin.H is a shortcut for map[string]interface{}
-func SomeJSON(c *gin.Context) {
+func someJSON(c *gin.Context) {
   c.JSON(http.StatusOK, gin.H{"message": "hey", "status": http.StatusOK})
+}
+
+func Utils(router *gin.Engine) {
+  router.GET("/someJSON", someJSON)
 }
