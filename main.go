@@ -15,6 +15,7 @@ func main() {
   routes.Users(router)
   routes.Util(router)
   routes.Ping(router)
+  routes.Socket(router)
   router.GET("/someGet", someGet)
 
   router.Run(":8080")
