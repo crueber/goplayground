@@ -10,6 +10,6 @@ func someJSON(c *gin.Context) {
   c.JSON(http.StatusOK, gin.H{"message": "hey", "status": http.StatusOK})
 }
 
-func Utils(router *gin.Engine) {
+func Util(router *gin.Engine) {
   router.GET("/someJSON", someJSON)
 }

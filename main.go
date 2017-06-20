@@ -13,8 +13,8 @@ func main() {
   router := gin.Default()
 
   routes.Users(router)
-  routes.Utils(router)
-  routes.Pinger(router)
+  routes.Util(router)
+  routes.Ping(router)
   router.GET("/someGet", someGet)
 
   router.Run(":8080")

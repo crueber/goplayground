@@ -10,6 +10,6 @@ func ping(c *gin.Context) {
   })
 }
 
-func Pinger(router *gin.Engine) {
+func Ping(router *gin.Engine) {
   router.GET("/ping", ping)  
 }
